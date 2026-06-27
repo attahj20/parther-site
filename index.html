@@ -1,10 +1,129 @@
-<!DOCTYPE html>7
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
-    <title>Cloud Security Solutions</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Abah Security Solutions | Enterprise Cloud & Network Consulting</title>
+    <!-- Tailwind CSS Engine -->
+    <script src="https://tailwindcss.com"></script>
+    <style>
+        .cyber-grid {
+            background-image: linear-gradient(rgba(15, 23, 42, 0.95), rgba(15, 23, 42, 0.95)), 
+                              url('https://unsplash.com');
+            background-size: cover;
+            background-position: center;
+        }
+    </style>
 </head>
-<body>
-    <h1>Cloud & Security Solutions Agency</h1>
-    <p>We specialize in enterprise performance, DDoS mitigation, and website optimization services.</p>
+<body class="bg-slate-900 text-slate-100 font-sans antialiased">
+
+    <!-- Header Navigation -->
+    <header class="border-b border-slate-800 bg-slate-900/80 backdrop-blur sticky top-0 z-50">
+        <div class="max-w-6xl mx-auto px-4 py-4 flex justify-between items-center">
+            <div class="flex items-center space-x-2">
+                <span class="text-blue-500 font-black text-xl tracking-wider">ABAH</span>
+                <span class="text-slate-400 font-light text-sm tracking-widest uppercase border-l border-slate-700 pl-2">Security Solutions</span>
+            </div>
+            <nav class="hidden md:flex space-x-6 text-sm font-medium text-slate-400">
+                <a href="#services" class="hover:text-blue-400 transition">Services</a>
+                <a href="#expertise" class="hover:text-blue-400 transition">Expertise Tracks</a>
+                <a href="#contact" class="bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded-md transition text-xs">Consultation</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="cyber-grid py-20 border-b border-slate-800 flex items-center min-h-[60vh]">
+        <div class="max-w-4xl mx-auto px-4 text-center">
+            <span class="text-xs font-semibold tracking-widest text-blue-400 uppercase bg-blue-500/10 px-3 py-1 rounded-full border border-blue-500/20">Cloud & Architecture Advisory</span>
+            <h1 class="text-4xl md:text-5xl font-extrabold tracking-tight text-white mt-4 mb-6 leading-tight">
+                Securing Enterprise Infrastructure <br class="hidden md:inline"> & Digital Assets
+            </h1>
+            <p class="text-lg text-slate-400 max-w-2xl mx-auto mb-8">
+                Independent technology consultant specializing in modern threat mitigation, high-availability content delivery networks (CDN), and zero-trust network architectures.
+            </p>
+            <div class="flex flex-col sm:flex-row justify-center space-y-3 sm:space-y-0 sm:space-x-4">
+                <a href="#contact" class="bg-blue-600 hover:bg-blue-700 text-white font-medium px-6 py-3 rounded-md text-sm transition shadow-lg shadow-blue-900/30">
+                    Request Infrastructure Audit
+                </a>
+                <a href="#services" class="border border-slate-700 hover:border-slate-500 bg-slate-800/40 text-slate-300 font-medium px-6 py-3 rounded-md text-sm transition">
+                    Explore Advisory Services
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Grid -->
+    <section id="services" class="py-20 max-w-6xl mx-auto px-4">
+        <div class="text-center mb-16">
+            <h2 class="text-2xl md:text-3xl font-bold text-white tracking-tight">Core Competencies</h2>
+            <p class="text-slate-400 mt-2 text-sm max-w-md mx-auto">Strategic security and network optimizations deployed for resilience and speed.</p>
+        </div>
+
+        <div class="grid md:grid-cols-3 gap-8">
+            <!-- Card 1 -->
+            <div class="bg-slate-800/40 border border-slate-800 p-6 rounded-lg hover:border-slate-700 transition flex flex-col justify-between">
+                <div>
+                    <div class="text-blue-500 text-2xl mb-4">🛡️</div>
+                    <h3 class="text-lg font-bold text-white mb-2">WAF & DDoS Mitigation</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed">
+                        Design and implementation of resilient web application firewalls and rate-limiting policies to secure edge infrastructure against automated layer-7 attacks.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Card 2 -->
+            <div class="bg-slate-800/40 border border-slate-800 p-6 rounded-lg hover:border-slate-700 transition flex flex-col justify-between">
+                <div>
+                    <div class="text-blue-500 text-2xl mb-4">🔑</div>
+                    <h3 class="text-lg font-bold text-white mb-2">Zero Trust Architecture</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed">
+                        Transitioning outdated, perimeter-reliant VPN architectures into strict identity-verified, least-privilege secure web gateways and application access control loops.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Card 3 -->
+            <div class="bg-slate-800/40 border border-slate-800 p-6 rounded-lg hover:border-slate-700 transition flex flex-col justify-between">
+                <div>
+                    <div class="text-blue-500 text-2xl mb-4">⚡</div>
+                    <h3 class="text-lg font-bold text-white mb-2">Edge Routing Optimization</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed">
+                        Configuring smart caching structures, DNS load balancing, and global network layers to achieve sub-millisecond delivery while cutting core cloud compute bandwidth costs.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Partnership / Vendor Alignment Focus Section -->
+    <section id="expertise" class="bg-slate-950 py-16 border-t border-b border-slate-800/60">
+        <div class="max-w-4xl mx-auto px-4 text-center">
+            <h3 class="text-xl font-bold text-white">Next-Generation Vendor Integrations</h3>
+            <p class="text-slate-400 text-sm mt-2 max-w-xl mx-auto">
+                We work closely with global edge computing leaders to deliver native optimizations. We design, audit, and safely scale client enterprise instances to ensure absolute performance compliance.
+            </p>
+        </div>
+    </section>
+
+    <!-- Contact & Engagement Footer -->
+    <footer id="contact" class="py-16 max-w-4xl mx-auto px-4 text-center">
+        <h2 class="text-xl font-bold text-white mb-4">Initiate Professional Engagement</h2>
+        <p class="text-slate-400 text-sm mb-6 max-w-md mx-auto">
+            Ready to secure your external API perimeter or speed up your core applications? Get in touch via our secure email link below.
+        </p>
+        <div class="inline-block bg-slate-800 border border-slate-700 px-6 py-3 rounded-md shadow-inner">
+            <span class="text-slate-400 text-xs block uppercase tracking-wider font-semibold mb-1">Corporate Correspondence</span>
+            <!-- Update the text to match your exact addy.io alias username -->
+            <a href="mailto:sales@attahj20.github.io" class="text-blue-400 font-mono text-sm hover:underline font-bold tracking-tight">
+                sales@attahj20.github.io
+            </a>
+        </div>
+        <p class="text-xs text-slate-600 mt-12">
+            &copy; 2026 Abah Security Solutions. All rights reserved. Professional Consultant Network footprint.
+        </p>
+    </footer>
+
 </body>
 </html>
+
