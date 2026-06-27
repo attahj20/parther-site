@@ -1,11 +1,10 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Partnersite CloudShield Tech | Enterprise Cloud & Network Consulting</title>
-    <!-- Tailwind CSS Engine -->
+    <title>CloudShield Tech | Enterprise Cloud & Network Consulting</title>
+    <!-- Live Tailwind Engine (Requires Internet connection to render colors) -->
     <script src="https://tailwindcss.com"></script>
 </head>
 <body class="bg-slate-50 text-slate-800 font-sans antialiased">
@@ -25,9 +24,12 @@
         </div>
     </header>
 
-    <!-- Hero Section -->
-    <section class="bg-gradient-to-br from-blue-50 via-white to-emerald-50 py-24 border-b border-slate-200 flex items-center min-h-[60vh]">
-        <div class="max-w-4xl mx-auto px-4 text-center">
+    <!-- Hero Section with Background Visual Accent -->
+    <section class="relative bg-gradient-to-br from-blue-50 via-white to-emerald-50 py-24 border-b border-slate-200 flex items-center min-h-[60vh] overflow-hidden">
+        <div class="absolute right-0 top-0 w-1/3 h-full opacity-10 hidden lg:block">
+            <img src="https://unsplash.com" alt="Server Infrastructure" class="w-full h-full object-cover">
+        </div>
+        <div class="max-w-4xl mx-auto px-4 text-center relative z-10">
             <span class="text-xs font-bold tracking-widest text-blue-600 uppercase bg-blue-100 px-3 py-1 rounded-full border border-blue-200">
                 Cloud & Architecture Advisory
             </span>
@@ -57,10 +59,11 @@
 
         <div class="grid md:grid-cols-3 gap-8">
             <!-- Card 1 -->
-            <div class="bg-white border border-slate-200 p-8 rounded-xl shadow-sm hover:shadow-md transition flex flex-col justify-between">
-                <div>
-                    <div class="bg-blue-50 w-12 h-12 rounded-lg flex items-center justify-center text-2xl mb-6 shadow-sm border border-blue-100">🛡️</div>
-                    <h3 class="text-xl font-bold text-slate-900 mb-3">WAF & DDoS Mitigation</h3>
+            <div class="bg-white border border-slate-200 rounded-xl shadow-sm hover:shadow-md transition overflow-hidden flex flex-col justify-between">
+                <img src="https://unsplash.com" alt="Cyber Security" class="w-full h-40 object-cover border-b border-slate-100">
+                <div class="p-6 flex-grow">
+                    <div class="bg-blue-50 w-10 h-10 rounded-lg flex items-center justify-center text-xl mb-4 shadow-sm border border-blue-100">🛡️</div>
+                    <h3 class="text-xl font-bold text-slate-900 mb-2">WAF & DDoS Mitigation</h3>
                     <p class="text-slate-600 text-sm leading-relaxed font-medium">
                         Design and implementation of resilient web application firewalls and rate-limiting policies to secure edge infrastructure against automated layer-7 attacks.
                     </p>
@@ -68,10 +71,11 @@
             </div>
 
             <!-- Card 2 -->
-            <div class="bg-white border border-slate-200 p-8 rounded-xl shadow-sm hover:shadow-md transition flex flex-col justify-between">
-                <div>
-                    <div class="bg-emerald-50 w-12 h-12 rounded-lg flex items-center justify-center text-2xl mb-6 shadow-sm border border-emerald-100">🔑</div>
-                    <h3 class="text-xl font-bold text-slate-900 mb-3">Zero Trust Architecture</h3>
+            <div class="bg-white border border-slate-200 rounded-xl shadow-sm hover:shadow-md transition overflow-hidden flex flex-col justify-between">
+                <img src="https://unsplash.com" alt="Network Security" class="w-full h-40 object-cover border-b border-slate-100">
+                <div class="p-6 flex-grow">
+                    <div class="bg-emerald-50 w-10 h-10 rounded-lg flex items-center justify-center text-xl mb-4 shadow-sm border border-emerald-100">🔑</div>
+                    <h3 class="text-xl font-bold text-slate-900 mb-2">Zero Trust Architecture</h3>
                     <p class="text-slate-600 text-sm leading-relaxed font-medium">
                         Transitioning outdated, perimeter-reliant VPN architectures into strict identity-verified, least-privilege secure web gateways and application access control loops.
                     </p>
@@ -79,10 +83,11 @@
             </div>
 
             <!-- Card 3 -->
-            <div class="bg-white border border-slate-200 p-8 rounded-xl shadow-sm hover:shadow-md transition flex flex-col justify-between">
-                <div>
-                    <div class="bg-blue-50 w-12 h-12 rounded-lg flex items-center justify-center text-2xl mb-6 shadow-sm border border-blue-100">⚡</div>
-                    <h3 class="text-xl font-bold text-slate-900 mb-3">Edge Routing Optimization</h3>
+            <div class="bg-white border border-slate-200 rounded-xl shadow-sm hover:shadow-md transition overflow-hidden flex flex-col justify-between">
+                <img src="https://unsplash.com" alt="Global Network" class="w-full h-40 object-cover border-b border-slate-100">
+                <div class="p-6 flex-grow">
+                    <div class="bg-blue-50 w-10 h-10 rounded-lg flex items-center justify-center text-xl mb-4 shadow-sm border border-blue-100">⚡</div>
+                    <h3 class="text-xl font-bold text-slate-900 mb-2">Edge Routing Optimization</h3>
                     <p class="text-slate-600 text-sm leading-relaxed font-medium">
                         Configuring smart caching structures, DNS load balancing, and global network layers to achieve sub-millisecond delivery while cutting core cloud compute bandwidth costs.
                     </p>
@@ -91,9 +96,9 @@
         </div>
     </section>
 
-    <!-- Partnership / Vendor Alignment Focus Section -->
-    <section id="expertise" class="bg-slate-900 text-white py-20">
-        <div class="max-w-4xl mx-auto px-4 text-center">
+    <!-- Partnership Focus Section -->
+    <section id="expertise" class="bg-slate-900 text-white py-20 relative overflow-hidden">
+        <div class="max-w-4xl mx-auto px-4 text-center relative z-10">
             <h3 class="text-2xl font-extrabold tracking-tight">Next-Generation Vendor Integrations</h3>
             <p class="text-slate-300 text-base mt-4 max-w-2xl mx-auto leading-relaxed font-medium">
                 We work closely with global edge computing leaders to deliver native optimizations. We design, audit, and safely scale client enterprise instances to ensure absolute performance compliance.
@@ -101,7 +106,7 @@
         </div>
     </section>
 
-    <!-- Contact & Engagement Footer -->
+    <!-- Contact Footer -->
     <footer id="contact" class="py-24 bg-white border-t border-slate-200 text-center">
         <div class="max-w-4xl mx-auto px-4">
             <h2 class="text-3xl font-extrabold text-slate-900 mb-4 tracking-tight">Initiate Professional Engagement</h2>
@@ -110,17 +115,17 @@
             </p>
             <div class="inline-block bg-slate-50 border border-slate-200 px-8 py-4 rounded-xl shadow-sm">
                 <span class="text-slate-500 text-xs block uppercase tracking-widest font-bold mb-2">Corporate Correspondence</span>
-                <a href="mailto:info@partnersite.anonaddy.com" class="text-blue-600 font-mono text-base hover:text-blue-700 hover:underline font-bold tracking-tight">
-                    info@partnersite.anonaddy.com
+                <a href="mailto:info@://anonaddy.com" class="text-blue-600 font-mono text-base hover:text-blue-700 hover:underline font-bold tracking-tight">
+                    info@://anonaddy.com
                 </a>
             </div>
             <p class="text-xs text-slate-400 mt-16 font-semibold">
-                &copy; 2026 Partnersite CloudShield Tech. All rights reserved. Professional Consultant Network footprint.
+                &copy; 2026 CloudShield Tech. All rights reserved. Professional Consultant Network footprint.
             </p>
         </div>
     </footer>
 
 </body>
 </html>
-
+ 
 
