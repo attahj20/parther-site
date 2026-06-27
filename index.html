@@ -3,129 +3,134 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CloudShield Tech | Enterprise Cloud & Network Consulting</title>
-    <!-- Live Tailwind Engine (Requires Internet connection to render colors) -->
-    <script src="https://tailwindcss.com"></script>
+    <title>partnersite Cloudshield Tech | Enterprise Cloud & Network Consulting</title>
+    <style>
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+        body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; background-color: #f8fafc; color: #334155; line-height: 1.6; }
+        a { text-decoration: none; transition: all 0.2s ease; }
+        .container { max-width: 1100px; margin: 0 auto; padding: 0 20px; }
+        header { background-color: #ffffff; border-bottom: 1px solid #e2e8f0; position: sticky; top: 0; z-index: 100; box-shadow: 0 1px 3px rgba(0,0,0,0.05); }
+        .nav-wrapper { display: flex; justify-content: space-between; padding: 15px 0; align-items: center; }
+        .logo-text { font-weight: 900; font-size: 20px; color: #2563eb; text-transform: lowercase; }
+        .logo-suffix { font-weight: 700; font-size: 14px; color: #059669; border-left: 1px solid #cbd5e1; margin-left: 8px; padding-left: 8px; text-transform: uppercase; }
+        .nav-links a { color: #475569; font-weight: 600; font-size: 14px; margin-left: 24px; }
+        .nav-links a:hover { color: #2563eb; }
+        .cta-btn { background-color: #2563eb; color: #ffffff !important; padding: 8px 16px; border-radius: 6px; box-shadow: 0 4px 6px -1px rgba(37,99,235,0.2); }
+        .cta-btn:hover { background-color: #1d4ed8; }
+        .hero { background: linear-gradient(135deg, #eff6ff 0%, #ffffff 50%, #ecfdf5 100%); padding: 100px 0; border-bottom: 1px solid #e2e8f0; text-align: center; }
+        .badge { display: inline-block; font-size: 12px; font-weight: 700; color: #2563eb; background-color: #dbeafe; padding: 4px 12px; border-radius: 9999px; border: 1px solid #bfdbfe; text-transform: uppercase; margin-bottom: 24px; }
+        .hero h1 { font-size: 42px; font-weight: 900; color: #0f172a; line-height: 1.2; margin-bottom: 24px; }
+        .hero h1 span.blue { color: #2563eb; }
+        .hero h1 span.green { color: #059669; }
+        .hero p { font-size: 18px; color: #475569; max-width: 700px; margin: 0 auto 32px auto; font-weight: 500; }
+        .hero-actions a { display: inline-block; font-weight: 700; font-size: 14px; padding: 12px 24px; border-radius: 6px; margin: 0 8px; }
+        .btn-primary { background-color: #2563eb; color: #ffffff; box-shadow: 0 10px 15px -3px rgba(37,99,235,0.3); }
+        .btn-primary:hover { background-color: #1d4ed8; }
+        .btn-secondary { border: 1px solid #cbd5e1; background-color: #ffffff; color: #334155; }
+        .btn-secondary:hover { border-color: #94a3b8; background-color: #f8fafc; }
+        .services-section { padding: 80px 0; }
+        .section-header { text-align: center; margin-bottom: 60px; }
+        .section-header h2 { font-size: 32px; font-weight: 800; color: #0f172a; }
+        .section-header p { color: #059669; font-weight: 600; font-size: 14px; margin-top: 8px; }
+        .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 32px; }
+        .card { background-color: #ffffff; border: 1px solid #e2e8f0; border-radius: 12px; padding: 32px; box-shadow: 0 1px 3px rgba(0,0,0,0.02); transition: transform 0.2s ease, box-shadow 0.2s ease; }
+        .card:hover { transform: translateY(-4px); box-shadow: 0 10px 15px -3px rgba(0,0,0,0.05); border-color: #cbd5e1; }
+        .icon-box { width: 48px; height: 48px; border-radius: 8px; display: flex; align-items: center; justify-content: center; margin-bottom: 24px; }
+        .bg-blue { background-color: #eff6ff; border: 1px solid #dbeafe; color: #2563eb; }
+        .bg-green { background-color: #ecfdf5; border: 1px solid #d1fae5; color: #059669; }
+        .card h3 { font-size: 20px; font-weight: 700; color: #0f172a; margin-bottom: 12px; }
+        .card p { font-size: 14px; color: #475569; font-weight: 500; }
+        .vendor-callout { background-color: #0f172a; color: #ffffff; padding: 80px 0; text-align: center; border-top: 1px solid #1e293b; border-bottom: 1px solid #1e293b; }
+        .vendor-callout h3 { font-size: 24px; font-weight: 800; color: #ffffff; }
+        .vendor-callout p { color: #94a3b8; font-size: 16px; max-width: 650px; margin: 16px auto 0 auto; line-height: 1.7; font-weight: 500; }
+        .footer-section { padding: 80px 0; background-color: #ffffff; text-align: center; border-top: 1px solid #e2e8f0; }
+        .footer-section h2 { font-size: 28px; font-weight: 800; color: #0f172a; margin-bottom: 12px; }
+        .footer-section .sub { color: #475569; font-size: 16px; max-width: 450px; margin: 0 auto 32px auto; font-weight: 500; }
+        .inbox-badge { display: inline-block; background-color: #f8fafc; border: 1px solid #e2e8f0; padding: 16px 32px; border-radius: 12px; text-align: center; }
+        .inbox-title { display: block; font-size: 11px; font-weight: 700; color: #64748b; text-transform: uppercase; margin-bottom: 6px; letter-spacing: 1px; }
+        .inbox-link { font-family: monospace; font-size: 16px; color: #2563eb; font-weight: 700; display: block; }
+        .inbox-link:hover { text-decoration: underline; color: #1d4ed8; }
+        .copyright { font-size: 12px; color: #94a3b8; margin-top: 60px; font-weight: 600; display: block; }
+    </style>
 </head>
-<body class="bg-slate-50 text-slate-800 font-sans antialiased">
+<body>
 
-    <!-- Header Navigation -->
-    <header class="border-b border-slate-200 bg-white/90 backdrop-blur sticky top-0 z-50 shadow-sm">
-        <div class="max-w-6xl mx-auto px-4 py-4 flex justify-between items-center">
-            <div class="flex items-center space-x-2">
-                <span class="text-blue-600 font-black text-xl tracking-wider">CLOUDSHIELD</span>
-                <span class="text-emerald-600 font-bold text-sm tracking-widest uppercase border-l border-slate-300 pl-2">TECH</span>
+    <header>
+        <div class="container nav-wrapper">
+            <div style="display: flex; align-items: center;">
+                <span class="logo-text">partnersite</span>
+                <span class="logo-suffix">Cloudshield Tech</span>
             </div>
-            <nav class="hidden md:flex space-x-6 text-sm font-semibold text-slate-600">
-                <a href="#services" class="hover:text-blue-600 transition">Services</a>
-                <a href="#expertise" class="hover:text-blue-600 transition">Expertise Tracks</a>
-                <a href="#contact" class="bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded-md transition text-xs shadow-md">Consultation</a>
+            <nav class="nav-links">
+                <a href="#services">Services</a>
+                <a href="#expertise">Expertise Tracks</a>
+                <a href="#contact" class="cta-btn">Consultation</a>
             </nav>
         </div>
     </header>
 
-    <!-- Hero Section with Background Visual Accent -->
-    <section class="relative bg-gradient-to-br from-blue-50 via-white to-emerald-50 py-24 border-b border-slate-200 flex items-center min-h-[60vh] overflow-hidden">
-        <div class="absolute right-0 top-0 w-1/3 h-full opacity-10 hidden lg:block">
-            <img src="https://unsplash.com" alt="Server Infrastructure" class="w-full h-full object-cover">
-        </div>
-        <div class="max-w-4xl mx-auto px-4 text-center relative z-10">
-            <span class="text-xs font-bold tracking-widest text-blue-600 uppercase bg-blue-100 px-3 py-1 rounded-full border border-blue-200">
-                Cloud & Architecture Advisory
-            </span>
-            <h1 class="text-4xl md:text-5xl font-black tracking-tight text-slate-900 mt-6 mb-6 leading-tight">
-                Securing <span class="text-blue-600">Enterprise Infrastructure</span> <br class="hidden md:inline"> & <span class="text-emerald-600">Digital Assets</span>
-            </h1>
-            <p class="text-lg text-slate-600 max-w-2xl mx-auto mb-8 font-medium">
-                Independent technology consultant specializing in modern threat mitigation, high-availability content delivery networks (CDN), and zero-trust network architectures.
-            </p>
-            <div class="flex flex-col sm:flex-row justify-center space-y-3 sm:space-y-0 sm:space-x-4">
-                <a href="#contact" class="bg-blue-600 hover:bg-blue-700 text-white font-bold px-6 py-3 rounded-md text-sm transition shadow-lg shadow-blue-200">
-                    Request Infrastructure Audit
-                </a>
-                <a href="#services" class="border border-slate-300 hover:border-slate-400 bg-white text-slate-700 font-bold px-6 py-3 rounded-md text-sm transition shadow-sm">
-                    Explore Advisory Services
-                </a>
+    <section class="hero">
+        <div class="container">
+            <span class="badge">Cloud & Architecture Advisory</span>
+            <h1>Securing <span class="blue">Enterprise Infrastructure</span><br>and <span class="green">Digital Assets</span></h1>
+            <p>Independent technology consultant specializing in modern threat mitigation, high-availability content delivery networks (CDN), and zero-trust network architectures.</p>
+            <div class="hero-actions">
+                <a href="#contact" class="btn-primary">Request Infrastructure Audit</a>
+                <a href="#services" class="btn-secondary">Explore Advisory Services</a>
             </div>
         </div>
     </section>
 
-    <!-- Services Grid -->
-    <section id="services" class="py-24 max-w-6xl mx-auto px-4">
-        <div class="text-center mb-16">
-            <h2 class="text-3xl font-extrabold text-slate-900 tracking-tight">Core Competencies</h2>
-            <p class="text-emerald-600 font-semibold mt-2 text-sm max-w-md mx-auto">Strategic security and network optimizations deployed for resilience and speed.</p>
-        </div>
-
-        <div class="grid md:grid-cols-3 gap-8">
-            <!-- Card 1 -->
-            <div class="bg-white border border-slate-200 rounded-xl shadow-sm hover:shadow-md transition overflow-hidden flex flex-col justify-between">
-                <img src="https://unsplash.com" alt="Cyber Security" class="w-full h-40 object-cover border-b border-slate-100">
-                <div class="p-6 flex-grow">
-                    <div class="bg-blue-50 w-10 h-10 rounded-lg flex items-center justify-center text-xl mb-4 shadow-sm border border-blue-100">🛡️</div>
-                    <h3 class="text-xl font-bold text-slate-900 mb-2">WAF & DDoS Mitigation</h3>
-                    <p class="text-slate-600 text-sm leading-relaxed font-medium">
-                        Design and implementation of resilient web application firewalls and rate-limiting policies to secure edge infrastructure against automated layer-7 attacks.
-                    </p>
-                </div>
+    <section id="services" class="services-section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Core Competencies</h2>
+                <p>Strategic security and network optimizations deployed for resilience and speed.</p>
             </div>
-
-            <!-- Card 2 -->
-            <div class="bg-white border border-slate-200 rounded-xl shadow-sm hover:shadow-md transition overflow-hidden flex flex-col justify-between">
-                <img src="https://unsplash.com" alt="Network Security" class="w-full h-40 object-cover border-b border-slate-100">
-                <div class="p-6 flex-grow">
-                    <div class="bg-emerald-50 w-10 h-10 rounded-lg flex items-center justify-center text-xl mb-4 shadow-sm border border-emerald-100">🔑</div>
-                    <h3 class="text-xl font-bold text-slate-900 mb-2">Zero Trust Architecture</h3>
-                    <p class="text-slate-600 text-sm leading-relaxed font-medium">
-                        Transitioning outdated, perimeter-reliant VPN architectures into strict identity-verified, least-privilege secure web gateways and application access control loops.
-                    </p>
+            <div class="grid">
+                <div class="card">
+                    <div class="icon-box bg-blue">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+                    </div>
+                    <h3>WAF & DDoS Mitigation</h3>
+                    <p>Design and implementation of resilient web application firewalls and rate-limiting policies to secure edge infrastructure against automated layer-7 attacks.</p>
                 </div>
-            </div>
-
-            <!-- Card 3 -->
-            <div class="bg-white border border-slate-200 rounded-xl shadow-sm hover:shadow-md transition overflow-hidden flex flex-col justify-between">
-                <img src="https://unsplash.com" alt="Global Network" class="w-full h-40 object-cover border-b border-slate-100">
-                <div class="p-6 flex-grow">
-                    <div class="bg-blue-50 w-10 h-10 rounded-lg flex items-center justify-center text-xl mb-4 shadow-sm border border-blue-100">⚡</div>
-                    <h3 class="text-xl font-bold text-slate-900 mb-2">Edge Routing Optimization</h3>
-                    <p class="text-slate-600 text-sm leading-relaxed font-medium">
-                        Configuring smart caching structures, DNS load balancing, and global network layers to achieve sub-millisecond delivery while cutting core cloud compute bandwidth costs.
-                    </p>
+                <div class="card">
+                    <div class="icon-box bg-green">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M21 2l-2 2m-7.61 7.61a5.5 5.5 0 1 1-7.778 7.778 5.5 5.5 0 0 1 7.777-7.777zm0 0L15.5 7.5m0 0l3 3L22 7l-3-3m-3.5 3.5L19 4"/></svg>
+                    </div>
+                    <h3>Zero Trust Architecture</h3>
+                    <p>Transitioning outdated, perimeter-reliant VPN architectures into strict identity-verified, least-privilege secure web gateways and application access control loops.</p>
+                </div>
+                <div class="card">
+                    <div class="icon-box bg-blue">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg>
+                    </div>
+                    <h3>Edge Routing Optimization</h3>
+                    <p>Configuring smart caching structures, DNS load balancing, and global network layers to achieve sub-millisecond delivery while cutting core cloud compute bandwidth costs.</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Partnership Focus Section -->
-    <section id="expertise" class="bg-slate-900 text-white py-20 relative overflow-hidden">
-        <div class="max-w-4xl mx-auto px-4 text-center relative z-10">
-            <h3 class="text-2xl font-extrabold tracking-tight">Next-Generation Vendor Integrations</h3>
-            <p class="text-slate-300 text-base mt-4 max-w-2xl mx-auto leading-relaxed font-medium">
-                We work closely with global edge computing leaders to deliver native optimizations. We design, audit, and safely scale client enterprise instances to ensure absolute performance compliance.
-            </p>
+    <section id="expertise" class="vendor-callout">
+        <div class="container">
+            <h3>Next-Generation Vendor Integrations</h3>
+            <p>We work closely with global edge computing leaders to deliver native optimizations. We design, audit, and safely scale client enterprise instances to ensure absolute performance compliance.</p>
         </div>
     </section>
 
-    <!-- Contact Footer -->
-    <footer id="contact" class="py-24 bg-white border-t border-slate-200 text-center">
-        <div class="max-w-4xl mx-auto px-4">
-            <h2 class="text-3xl font-extrabold text-slate-900 mb-4 tracking-tight">Initiate Professional Engagement</h2>
-            <p class="text-slate-600 text-base mb-8 max-w-md mx-auto font-medium">
-                Ready to secure your external API perimeter or speed up your core applications? Get in touch via our secure email link below.
-            </p>
-            <div class="inline-block bg-slate-50 border border-slate-200 px-8 py-4 rounded-xl shadow-sm">
-                <span class="text-slate-500 text-xs block uppercase tracking-widest font-bold mb-2">Corporate Correspondence</span>
-                <a href="mailto:info@://anonaddy.com" class="text-blue-600 font-mono text-base hover:text-blue-700 hover:underline font-bold tracking-tight">
-                    info@://anonaddy.com
-                </a>
+    <section id="contact" class="footer-section">
+        <div class="container">
+            <h2>Initiate Professional Engagement</h2>
+            <p class="sub">Ready to secure your external API perimeter or speed up your core applications? Get in touch via our secure email link below.</p>
+            <div class="inbox-badge">
+                <span class="inbox-title">Corporate Correspondence</span>
+                <a href="mailto:info@partnersite.anonaddy.com" class="inbox-link">info@partnersite.anonaddy.com</a>
             </div>
-            <p class="text-xs text-slate-400 mt-16 font-semibold">
-                &copy; 2026 CloudShield Tech. All rights reserved. Professional Consultant Network footprint.
-            </p>
+            <span class="copyright">&copy; 2026 partnersite Cloudshield Tech. All rights reserved. Professional Consultant Network footprint.</span>
         </div>
-    </footer>
+    </section>
 
 </body>
 </html>
- 
-
